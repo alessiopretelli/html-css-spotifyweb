@@ -14,7 +14,7 @@ h2 {
   margin: 20px 0;
 }
 .less_margin {
-  margin-bottom: 7px;
+  margin: 10px 0;
 }
 
 .wrapper {
@@ -41,7 +41,7 @@ header {
   width: calc(100% - 263px);
   margin-right: 17px;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
   z-index: 2;
 }
 #button_upgrade {
@@ -86,6 +86,7 @@ footer {
 .logo {
   height: 100px;
   width: 100%;
+  cursor: pointer;
 }
 .display_none_two {
   display: none;
@@ -380,6 +381,7 @@ footer {
   text-decoration: underline;
 }
 .left_footer_i {
+  margin-left: 20px;
   height: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -512,7 +514,7 @@ footer {
     display: none;
   }
   .account .far {
-    margin: 10px 6px;
+    margin: 10px 5px;
   }
   .display_none {
     display: none;
@@ -521,6 +523,7 @@ footer {
     display: block;
   }
   .left_footer_i {
+    margin-left: 5px;
     margin-bottom: 28px;
   }
   .left_footer_i i {
