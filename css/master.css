@@ -29,10 +29,34 @@ h2 {
   clear: both;
 }
 
-.header_main_content {
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
   height: 70px;
-  width: 100%;
-  color: black;
+  line-height: 70px;
+  width: calc(100% - 233px);
+  margin-right: 17px;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+#button_upgrade {
+  margin: 20px 5px;
+  padding: 0 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: black;
+  cursor: pointer;
+}
+#button_upgrade p {
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -40,9 +64,16 @@ main {
 }
 
 footer {
-  position: relative;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 90px;
   background-color: #3a3636;
+  z-index: 5;
 }
 
 .logo {
@@ -242,6 +273,7 @@ footer {
   float: left;
   width: calc(100% - 250px);
   height: 100%;
+  padding-top: 70px;
   background-color: #2a2a26;
   overflow-y: auto;
 }
@@ -256,19 +288,9 @@ footer {
 
 .left_footer {
   height: 90px;
-  float: left;
-}
-.center_footer {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
 }
 .right_footer {
   height: 90px;
-  float: right;
 }
 
 .left_footer img {
@@ -325,7 +347,7 @@ footer {
   height: 3px;
   margin: 0 0.5vw;
   background-color: grey;
-  width: 27vw;
+  width: 25vw;
 }
 .inside_line {
   width: 10%;
