@@ -45,6 +45,123 @@ footer {
   background-color: #3a3636;
 }
 
+.logo {
+  height: 100px;
+  width: 100%;
+}
+.logo img {
+  margin: 5%;
+  width: 80%;
+}
+.home {
+  height: 15px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.home_two {
+  height: 15px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.home_two p {
+  display: inline-block;
+  color: grey;
+  font-size: 15px;
+}
+.home_two i {
+  display: inline-block;
+  color: grey;
+  margin-left: 22px;
+  font-size: 15px;
+}
+.vertical_line {
+  float: left;
+  height: 100%;
+  border-right: 2px solid lime;
+}
+.home p {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+}
+.home i {
+  display: inline-block;
+  color: white;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.main_nav_playlist {
+  position: relative;
+  height: 75px;
+  margin-top: 20px;
+  padding-left: 22px;
+}
+.main_nav_playlist h5 {
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.playlist {
+  line-height: 50px;
+  height: 50px;
+}
+.playlist i {
+  font-size: 30px;
+  color: grey;
+}
+.playlist p {
+  display: inline-block;
+  color: grey;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.playlist_list {
+  min-height: 50px;
+  margin-left: 22px;
+  overflow-y: auto;
+}
+.playlist_list p {
+  display: block;
+  font-size: 15px;
+  color: grey;
+  margin: 10px 0;
+}
+
+.account {
+  align-self: stretch;
+  padding-left: 22px;
+}
+.account .far.fa-user-circle {
+  display: inline-block;
+  font-size: 15px;
+  color: grey;
+  vertical-align: middle;
+}
+.account .fas.fa-user-circle {
+  display: inline-block;
+  font-size: 25px;
+  color: grey;
+  vertical-align: middle;
+}
+.account p {
+  display: inline-block;
+  font-size: 15px;
+  color: grey;
+  margin: 0 2px;
+}
+.account hr {
+  margin: 5px 0;
+  width: 206px;
+  color: lightgrey;
+}
+.account h4 {
+  color: white;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .menu {
   height: 50px;
   text-align: center;
@@ -68,6 +185,7 @@ footer {
 .recently_played {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .created_for {
   display: flex;
@@ -79,11 +197,13 @@ footer {
 }
 
 .songs {
-  width: 20%;
+  width: 16%;
+  min-width: 200px;
 }
 
 .songs_downrow {
-  width: 16.7%;
+  width: 16%;
+  min-width: 200px;
 }
 .songs_downrow img {
   width: 90%;
@@ -101,6 +221,7 @@ footer {
 .text_songs p {
   font-size: 0.75vw;
   color: grey;
+  margin-bottom: 20px;
 }
 .text_songs {
   text-align: center;
@@ -108,15 +229,18 @@ footer {
 }
 
 .main_nav {
+  display: flex;
+  flex-direction: column;
   float: left;
-  width: 15%;
+  width: 250px;
   height: 100%;
   background-color: black;
+  overflow-y: hidden;
 }
 
 .main_content {
   float: left;
-  width: 85%;
+  width: calc(100% - 250px);
   height: 100%;
   background-color: #2a2a26;
   overflow-y: auto;
