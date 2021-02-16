@@ -17,7 +17,8 @@
         <section class="main_nav">
           <div class="main_nav_top">
             <div class="logo">
-              <img src="img\logo.svg" alt="">
+              <img class="display_none" src="img\logo.svg" alt="">
+              <img class="display_none_two display_allow" src="img\logo-small.svg" alt="">
             </div>
             <div class="home">
               <div class="vertical_line"></div>
@@ -50,15 +51,16 @@
             <p>Nome Playlist</p>
           </div>
           <div class="account">
-            <i class="far fa-user-circle"></i>
-            <p>Installa app</p>
+            <a href="#">
+              <i class="far fa-user-circle"></i>
+              <p>Installa app</p>
+            </a>
             <hr>
             <i class="fas fa-user-circle"></i>
             <h4>John Doe</h4>
           </div>
         </section>
         <section class="main_content">
-          <div class="header_main_content"></div>
           <div class="container_main_content">
             <div class="menu">
               <a href="">
@@ -74,42 +76,72 @@
             <h2>Recently played</h2>
             <div class="recently_played">
               <div class="songs">
-                <img src="img/metal_lifting.jpg" alt="">
+                <div class="pic">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Heavy metal</h4>
                   <p>Subtitle</p>
                 </div>
               </div>
               <div class="songs">
-                <img src="img\stranger.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\stranger.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
                   <p>Kyle Dixon & Michael Stein</p>
                 </div>
               </div>
               <div class="songs">
-                <img src="img\aquietplace.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\aquietplace.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>A quiet place</h4>
                   <p>Subtitle</p>
                 </div>
               </div>
               <div class="songs">
-                <img src="img\split.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\split.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Split</h4>
                   <p>Subtitle</p>
                 </div>
               </div>
               <div class="songs">
-                <img src="img\cure.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\cure.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>A cure for wellness</h4>
                   <p>Subtitle</p>
                 </div>
               </div>
               <div class="songs">
-                <img src="img\sinister.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\sinister.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Sinister</h4>
                   <p>Subtitle</p>
@@ -120,13 +152,23 @@
             <p class="after_htwo">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
             <div class="created_for">
               <div class="songs_downrow">
-                <img src="img\radar.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\radar.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Release Radar</h4>
                 </div>
               </div>
               <div class="songs_downrow">
-                <img src="img\mixdaily.jpeg" alt="">
+                <div class="pic">
+                  <img src="img\mixdaily.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Daily Mix 1</h4>
                 </div>
@@ -136,13 +178,23 @@
             <p class="after_htwo">Piu' ascolti, piu' accurati saranno i suggerimenti.</p>
             <div class="created_for">
               <div class="songs_downrow">
-                <img class="round_img" src="img\youg.jpeg" alt="">
+                <div class="pic_two">
+                  <img class="round_img" src="img\youg.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Lana Del rey</h4>
                 </div>
               </div>
               <div class="songs_downrow">
-                <img class="round_img" src="img\einaudi.jpeg" alt="">
+                <div class="pic_two">
+                  <img class="round_img" src="img\einaudi.jpeg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                 <div class="text_songs">
                   <h4>Ludovico Einaudi</h4>
                 </div>
@@ -175,6 +227,7 @@
             <span>0:25</span>
             <div class="long_line">
               <div class="inside_line"></div>
+              <i class="fas fa-circle"></i>
             </div>
             <span>4:35</span>
           </div>
@@ -185,7 +238,9 @@
             <i class="fas fa-tv"></i>
             <i class="fas fa-volume-up"></i>
             <div class="short_line">
-              <div class="inside_line up_"></div>
+              <div class="inside_line up_">
+                <i class="fas fa-circle"></i>
+              </div>
             </div>
           </div>
         </div>
