@@ -167,6 +167,7 @@ footer {
   margin-left: 5px;
 }
 .playlist_list {
+  height: 100%;
   min-height: 50px;
   margin-left: 22px;
   overflow-y: auto;
@@ -184,7 +185,7 @@ footer {
 
 .account {
   padding-left: 22px;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 .account .far.fa-user-circle {
   font-size: 15px;
@@ -321,7 +322,6 @@ footer {
 .main_nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   float: left;
   width: 250px;
   height: 100%;
@@ -353,6 +353,9 @@ footer {
   height: 90px;
 }
 
+.left_footer_img {
+  display: inline-block;
+}
 .left_footer img {
   display: inline-block;
   width: 40px;
@@ -361,8 +364,9 @@ footer {
 }
 .left_footer_text {
   display: inline-block;
-  height: 90px;
-  line-height: 45px;
+  height: 100%;
+  vertical-align: middle;
+  margin-bottom: 17px;
 }
 .left_footer_text h5 {
   color: white;
@@ -406,7 +410,8 @@ footer {
   vertical-align: middle;
 }
 .far.fa-play-circle:hover {
-  font-size: 30px;
+  font-size: 27px;
+  cursor: pointer;
 }
 
 .bottom_center_footer span {
@@ -430,8 +435,10 @@ footer {
   background-color: lime;
 }
 .long_line:hover .fas.fa-circle {
+  display: block;
   position: absolute;
   left: 10%;
+  top: -3px;
   color: white;
   font-size: 10px;
 }
@@ -452,12 +459,21 @@ footer {
   margin: 0 5px;
 }
 .short_line {
+  position: relative;
   vertical-align: middle;
   display: inline-block;
   height: 3px;
   margin: 0 0.5vw;
   background-color: grey;
   width: 50px;
+}
+.short_line:hover .fas.fa-circle {
+  display: block;
+  position: absolute;
+  left: 20%;
+  top: -3px;
+  color: white;
+  font-size: 10px;
 }
 .short_line:hover .inside_line.up_ {
   background-color: lime;
@@ -467,12 +483,6 @@ footer {
 }
 
 @media screen and (max-width: 1199px) {
-  .songs {
-    min-width: 200px;
-  }
-  .songs_downrow {
-    min-width: 200px;
-  }
   .created_for {
     flex-wrap: wrap;
   }
@@ -510,6 +520,9 @@ footer {
   .display_allow {
     display: block;
   }
+  .left_footer_i {
+    margin-bottom: 28px;
+  }
   .left_footer_i i {
     display: block;
   }
@@ -522,5 +535,25 @@ footer {
   }
   .vertical_line {
     display: none;
+  }
+  .logo {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .songs {
+    width: 25%;
+  }
+  .songs_downrow {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .songs {
+    width: 50%;
+  }
+  .songs_downrow {
+    width: 50%;
   }
 }
