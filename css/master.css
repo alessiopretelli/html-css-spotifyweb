@@ -5,6 +5,7 @@
 }
 
 body {
+  min-width: 500px;
   background-color: black;
   font-family: 'Roboto', sans-serif;
 }
@@ -41,7 +42,7 @@ header {
   width: calc(100% - 263px);
   margin-right: 17px;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.6;
   z-index: 2;
 }
 #button_upgrade {
@@ -92,8 +93,8 @@ footer {
   display: none;
 }
 .logo img {
-  margin: 5%;
-  width: 80%;
+  margin: 5% 7%;
+  width: 60%;
 }
 .home {
   height: 15px;
@@ -335,7 +336,7 @@ footer {
   width: calc(100% - 250px);
   height: 100%;
   padding-top: 70px;
-  background-color: #0d1015;
+  background-color: #131c2a;
   overflow-y: auto;
 }
 .container_main_content {
@@ -416,6 +417,9 @@ footer {
   cursor: pointer;
 }
 
+.bottom_center_footer {
+  text-align: center;
+}
 .bottom_center_footer span {
   color: white;
   font-size: 10px;
@@ -459,6 +463,10 @@ footer {
   font-size: 12px;
   color: white;
   margin: 0 5px;
+}
+.fas.fa-volume-up:hover {
+  cursor: pointer;
+  font-size: 13px;
 }
 .short_line {
   position: relative;
